@@ -1,10 +1,15 @@
 package io.boot.start.topics;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
 
+	@Id
 	private String id;
 	private String name;
-	private String desc;
+	private String descrption;
 
 	public Topic(){
 		
@@ -13,7 +18,7 @@ public class Topic {
 		super();
 		this.id = id;
 		this.name = name;
-		this.desc = desc;
+		this.descrption = desc;
 	}
 
 	public String getId() {
@@ -29,12 +34,9 @@ public class Topic {
 		this.name = name;
 	}
 	public String getDesc() {
-		return desc;
+		return descrption;
 	}
 	public void setDesc(String desc) {
-		this.desc = desc;
+		this.descrption = desc;
 	}
-
-
-
 }
