@@ -10,5 +10,4 @@ public class MainAPIApp {
 		System.out.println("Starting app..");
 		SpringApplication.run(MainAPIApp.class, args);
 	}
- 
-}
+ }

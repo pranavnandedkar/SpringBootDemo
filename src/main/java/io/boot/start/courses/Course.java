@@ -1,20 +1,20 @@
-package io.boot.start.topics;
+package io.boot.start.courses;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Topic {
+public class Course {
 
 	@Id
 	private String id;
 	private String name;
 	private String descrption;
 
-	public Topic(){
+	public Course(){
 		
 	}
-	public Topic(String id, String name, String desc) {
+	public Course(String id, String name, String desc) {
 		super();
 		this.id = id;
 		this.name = name;
